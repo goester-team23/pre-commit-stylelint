@@ -4,7 +4,13 @@
     language: node
     files: \.(css|scss|sass|vue)$
     args: []
-
+    
+-   id: vue-tsc
+    name: vue-tsc
+    entry: vue-tsc
+    language: node
+    files: \.(ts|tsx|vue)$
+    args: [--noEmit]
 
     # Use additional_dependencies to install the actual node package
     minimum_pre_commit_version: 0.7.0
